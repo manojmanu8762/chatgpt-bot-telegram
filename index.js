@@ -10,7 +10,7 @@ const openai = new OpenAIApi(configuration);
 module.exports = openai;
 
 const bot = new Telegraf(process.env.TG_API);
-bot.start((ctx) => ctx.reply("Welcome , You can ask anything from me"));
+bot.start((ctx) => ctx.reply("Welcome to MiyoAi, You can ask anything from me"));
 
 bot.help((ctx) => {
   ctx.reply(
