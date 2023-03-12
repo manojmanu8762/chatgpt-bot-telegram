@@ -50,7 +50,7 @@ bot.command("image", async (ctx) => {
 // Chat command
 
 bot.command("text", async (ctx) => {
-  const text = ctx.message.text?.replace("/ask", "")?.trim().toLowerCase();
+  const text = ctx.message.text?.replace("/ask".trim().toLowerCase();
 
   if (text) {
     ctx.sendChatAction("typing");
