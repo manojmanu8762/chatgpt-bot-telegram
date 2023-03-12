@@ -49,7 +49,7 @@ bot.command("image", async (ctx) => {
 
 // Chat command
 
-bot.command("ask", async (ctx) => {
+bot.command("text", async (ctx) => {
   const text = ctx.message.text?.replace("/ask", "")?.trim().toLowerCase();
 
   if (text) {
